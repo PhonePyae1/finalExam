@@ -12,4 +12,4 @@ PhonePyae KyawSwar
  
  # Techstack
  
- React, MongoDB
+ Mern
