@@ -27,6 +27,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(express.static(path.join(__dirname,"public","react-quotation")));
+app.get('/react-quotation/*',function(req,res){
+  res.sendFile(path.join(__dirname,'public','react-quotation','index.html'));
+});
 // Plug routers
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
