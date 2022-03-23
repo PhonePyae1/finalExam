@@ -8,7 +8,7 @@ require('dotenv').config()
 require('./db/db.js')
 
 // Load routers
-var indexRouter = require('./routes/index');
+var indexRouter = require('./public/react-quotation');
 var usersRouter = require('./routes/users');
 var productsRouter = require('./routes/products');
 var customerRouter = require('./routes/customers');
